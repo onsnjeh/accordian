@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "role": "admin",
+      "url": "/admin/accordion"
+    },
+     {
+      "id": 2,
+      "role": "client",
+      "url": "/client/accordian"
+    },
+     {
+      "id": 1,
+      "role": "expert",
+      "url": "/expert/accordian"
+    }
+  ]
+}
