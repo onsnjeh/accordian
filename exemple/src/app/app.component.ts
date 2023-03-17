@@ -1,33 +1,28 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, Input} from '@angular/core';
 import { DataService } from './data.service';
+
+import { model } from './model';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent  implements OnInit {
+export class AppComponent    {
   title = 'exemple';
+  item1!: model;
+  
  
-    id!: number;
-    item: any;
+  constructor(
+    private service1: DataService,
+   
+  ) { }
+
   
-    constructor(
-      private route: ActivatedRoute,
-      private dataService: DataService
-    ) { }
+ 
+ 
   
-    ngOnInit() {
-      this.route.paramMap.subscribe(params => {
-        const id = params.get('id');
-        if (id !== null) {
-          this.id = +id;
-        }
-                this.dataService.getItemById(this.id).subscribe(item => {
-          this.item = item;
-        });
-      });
-    }
+ 
+   
   
 }

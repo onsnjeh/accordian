@@ -3,17 +3,17 @@
     {
       "id": 1,
       "role": "admin",
-      "url": "/admin/accordion"
+      "url": "https://startbootstrap.com/previews/sb-admin-2"
     },
      {
       "id": 2,
       "role": "client",
-      "url": "/client/accordian"
+      "url": "https://startbootstrap.com/previews/sb-admin-2"
     },
      {
       "id": 1,
       "role": "expert",
-      "url": "/expert/accordian"
+      "url": "https://startbootstrap.com/previews/sb-admin-2"
     }
   ]
 }
